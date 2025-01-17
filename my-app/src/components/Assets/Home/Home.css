@@ -1,33 +1,3 @@
-.Navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    /* Keeps the navbar on top */
-}
-
-.Navbar-links {
-    display: flex;
-    gap: 20px;
-}
-
-.Navbar-link {
-    color: #333333;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-}
-
-.Navbar-link:hover {
-    background-color: #555;
-}
 
 .About_me,
 .Work_experience,
@@ -45,16 +15,13 @@
     pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
+
 
 .App-header {
     background:
-        radial-gradient(circle at 50% 50%, #eae0f4 10%, transparent 30%),
-        radial-gradient(circle at 90% 10%, #f9e3b3 10%, transparent 30%),
+        radial-gradient(circle at 50% 50%, #eae0f4 5%, transparent 30%),
+        radial-gradient(circle at 90% 10%, #f9e3b3 5%, transparent 30%),
+        radial-gradient(circle at 10% 80%, #f9c4d1 5%, transparent 30%),
         linear-gradient(135deg, #fde9f2, #f1e4ff);
     background-size: 200% 200%, 400% 400%, 400% 400%;
     animation: purpleBallAnimation 10s ease-in-out infinite, pastelGradientAnimation 20s ease infinite;
@@ -65,7 +32,6 @@
     justify-content: flex-start;
     font-size: calc(10px + 2vmin);
     color: white;
-    padding-top: 60px;
     /* Prevents content from being hidden under the navbar */
     padding-bottom: 20px;
     /* Optional: adds some bottom padding for spacing */

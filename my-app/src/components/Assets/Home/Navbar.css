@@ -1,29 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
 .Navbar {
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 140px);
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 25px 70px;
     display: flex;
     justify-content: space-between;
+    /* Ensures space between items */
     align-items: center;
     z-index: 10;
+    border-bottom: 2px solid #000000;
 }
 
 .Navbar-links {
     display: flex;
     gap: 20px;
+    width: 100%;
+    /* Ensures the links occupy full width */
 }
 
 .Navbar-link {
-    color: #333333;
+    color: #000000;
     text-decoration: none;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
     padding: 5px 10px;
     transition: background-color 0.3s;
+    font-family: 'Exo 2', Arial, sans-serif;
 }
 
 .Navbar-link:hover {
-    background-color: #555;
+    color: #474747ee;
+}
+
+/* Push the 'Contact Me' link to the right */
+.Navbar .Navbar-links .contact {
+    margin-left: auto;
+    /* This pushes the 'contact' link to the right */
 }
