@@ -3,8 +3,9 @@
 .Navbar {
     top: 0;
     left: 0;
+    position: fixed;
     width: calc(100% - 140px);
-    background-color: transparent;
+    background-color: black;
     padding: 25px 70px;
     display: flex;
     justify-content: space-between;
@@ -22,7 +23,7 @@
 }
 
 .Navbar-link {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
@@ -32,7 +33,7 @@
 }
 
 .Navbar-link:hover {
-    color: #474747ee;
+    color: #cca9f2;
 }
 
 /* Push the 'Contact Me' link to the right */

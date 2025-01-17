@@ -19,12 +19,22 @@
 
 .App-header {
     background:
-        radial-gradient(circle at 50% 50%, #eae0f4 5%, transparent 30%),
-        radial-gradient(circle at 90% 10%, #f9e3b3 5%, transparent 30%),
-        radial-gradient(circle at 10% 80%, #f9c4d1 5%, transparent 30%),
-        linear-gradient(135deg, #fde9f2, #f1e4ff);
+        radial-gradient(circle at 10% 50%, #eae0f4 5%, transparent 30%),
+        radial-gradient(circle at 20% 10%, #f9e3b3 5%, transparent 30%),
+        radial-gradient(circle at 30% 80%, #f9c4d1 5%, transparent 30%),
+        radial-gradient(circle at 40% 20%, #eae0f4 5%, transparent 30%),
+        radial-gradient(circle at 50% 60%, #f9e3b3 5%, transparent 30%),
+        radial-gradient(circle at 60% 40%, #f9c4d1 5%, transparent 30%),
+        radial-gradient(circle at 70% 10%, #eae0f4 5%, transparent 30%),
+        radial-gradient(circle at 80% 30%, #f9e3b3 5%, transparent 30%),
+        radial-gradient(circle at 90% 90%, #f9c4d1 5%, transparent 30%),
+        radial-gradient(circle at 15% 10%, #eae0f4 5%, transparent 30%),
+        radial-gradient(circle at 35% 30%, #f9e3b3 5%, transparent 30%),
+        radial-gradient(circle at 2% 90%, #f9c4d1 5%, transparent 30%),
+        /*linear-gradient(135deg, #fde9f2, #f1e4ff);*/
+        linear-gradient(135deg, #f13b8d, #f1e4ff);
     background-size: 200% 200%, 400% 400%, 400% 400%;
-    animation: purpleBallAnimation 10s ease-in-out infinite, pastelGradientAnimation 20s ease infinite;
+    animation: purpleBallAnimation 3s ease-in-out infinite, pastelGradientAnimation 20s ease infinite;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
