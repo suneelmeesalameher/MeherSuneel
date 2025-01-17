@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MeherSuneel/static/css/main.5e920b78.css",
+    "main.js": "/MeherSuneel/static/js/main.66a7332d.js",
+    "static/js/136.0de01aba.chunk.js": "/MeherSuneel/static/js/136.0de01aba.chunk.js",
+    "index.html": "/MeherSuneel/index.html",
+    "main.5e920b78.css.map": "/MeherSuneel/static/css/main.5e920b78.css.map",
+    "main.66a7332d.js.map": "/MeherSuneel/static/js/main.66a7332d.js.map",
+    "136.0de01aba.chunk.js.map": "/MeherSuneel/static/js/136.0de01aba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e920b78.css",
+    "static/js/main.66a7332d.js"
+  ]
+}
