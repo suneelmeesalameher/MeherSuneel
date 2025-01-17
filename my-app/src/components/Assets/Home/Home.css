@@ -55,7 +55,7 @@
     background:
         radial-gradient(circle at 50% 50%, #eae0f4 10%, transparent 30%),
         radial-gradient(circle at 90% 10%, #f9e3b3 10%, transparent 30%),
-        linear-gradient(135deg, #ffffff, #fde9f2, #f1e4ff);
+        linear-gradient(135deg, #fde9f2, #f1e4ff);
     background-size: 200% 200%, 400% 400%, 400% 400%;
     animation: purpleBallAnimation 10s ease-in-out infinite, pastelGradientAnimation 20s ease infinite;
     min-height: 100vh;
