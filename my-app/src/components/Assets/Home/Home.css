@@ -1,0 +1,122 @@
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    /* Keeps the navbar on top */
+}
+
+.Navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.Navbar-link {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.Navbar-link:hover {
+    background-color: #555;
+}
+
+.About_me,
+.Work_experience,
+.Technical_skills,
+.Education,
+.Projects,
+.Contact_me {
+    color: #333333;
+    margin: 20px 0;
+    /* Adds some spacing between sections */
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background:
+        radial-gradient(circle at 50% 50%, #eae0f4 10%, transparent 30%),
+        radial-gradient(circle at 90% 10%, #f9e3b3 10%, transparent 30%),
+        linear-gradient(135deg, #ffffff, #fde9f2, #f1e4ff);
+    background-size: 200% 200%, 400% 400%, 400% 400%;
+    animation: purpleBallAnimation 10s ease-in-out infinite, pastelGradientAnimation 20s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-top: 60px;
+    /* Prevents content from being hidden under the navbar */
+    padding-bottom: 20px;
+    /* Optional: adds some bottom padding for spacing */
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pastelGradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes purpleBallAnimation {
+    0% {
+        background-position: 30% 30%, 0% 50%;
+    }
+
+    25% {
+        background-position: 70% 40%, 100% 50%;
+    }
+
+    50% {
+        background-position: 50% 70%, 50% 50%;
+    }
+
+    75% {
+        background-position: 30% 60%, 0% 50%;
+    }
+
+    100% {
+        background-position: 30% 30%, 100% 50%;
+    }
+}
