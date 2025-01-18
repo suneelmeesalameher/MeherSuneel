@@ -14,7 +14,15 @@
     height: 40vmin;
     pointer-events: none;
 }
-
+section {
+   
+    padding: 0;
+}
+section {
+    margin: 0;
+    padding: 50px 0;
+    width: 100%;
+}
 
 
 .App-header {
@@ -33,7 +41,7 @@
         radial-gradient(circle at 2% 90%, #f9c4d1 5%, transparent 30%),
         /*linear-gradient(135deg, #fde9f2, #f1e4ff);*/
         linear-gradient(135deg, #f13b8d, #f1e4ff);
-    background-size: 200% 200%, 400% 400%, 400% 400%;
+    background-size: 300% 300%;
     animation: purpleBallAnimation 3s ease-in-out infinite, pastelGradientAnimation 20s ease infinite;
     min-height: 100vh;
     display: flex;
@@ -46,7 +54,9 @@
     padding-bottom: 20px;
     /* Optional: adds some bottom padding for spacing */
 }
-
+.App-header {
+    min-height: 100%;
+}
 .App-link {
     color: #61dafb;
 }
@@ -95,4 +105,9 @@
     100% {
         background-position: 30% 30%, 100% 50%;
     }
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }

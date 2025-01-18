@@ -1,0 +1,41 @@
+.contact-title{
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+.contact-section{
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Exo2',sans-serif;
+}
+.contact-summary{
+    padding: 20px 0px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.contact-button:hover {
+    background-color: #cca9f2;
+    color: #ffffff;
+    transform: scale(1.05);
+
+}
+html {
+    scroll-behavior: smooth;
+}

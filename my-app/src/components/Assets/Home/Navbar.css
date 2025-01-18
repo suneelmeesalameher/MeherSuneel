@@ -35,9 +35,14 @@
 .Navbar-link:hover {
     color: #cca9f2;
 }
-
+.Navbar-link.active {
+    color: #cca9f2;
+}
 /* Push the 'Contact Me' link to the right */
 .Navbar .Navbar-links .contact {
     margin-left: auto;
     /* This pushes the 'contact' link to the right */
+}
+html {
+    scroll-behavior: smooth;
 }

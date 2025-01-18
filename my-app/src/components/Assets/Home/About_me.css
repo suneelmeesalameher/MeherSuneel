@@ -3,10 +3,10 @@ div {
     /* Ensure no parent container centers content */
 }
 .about{
-    padding: 150px 50px;
+    padding: 150px 250px;
 }
 .Name {
-    padding: 250px 0px 0px 0%;
+    padding: 250px 50px 0px 0%;
     /* Adjust left padding for a percentage-based shift */
     font-size: 70px;
     color: #000000;
@@ -34,4 +34,7 @@ div {
     font-family: 'Exo 2', sans-serif;
     text-align: left;
     /* Ensure alignment is consistent */
+}
+html {
+    scroll-behavior: smooth;
 }
