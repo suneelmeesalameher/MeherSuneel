@@ -3,20 +3,19 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('about');
-  
+
   useEffect(() => {
-    const navbarHeight = document.querySelector('.Navbar').offsetHeight; // Get the navbar height
+    const navbarHeight = document.querySelector('.Navbar').offsetHeight;
 
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
-      const scrollPos = window.scrollY + navbarHeight; // Adjust scroll position by navbar height
+      const scrollPos = window.scrollY + navbarHeight;
 
       sections.forEach((section) => {
         const top = section.offsetTop;
         const height = section.offsetHeight;
         const id = section.getAttribute('id');
 
-        // Check if the scroll position is within the bounds of a section
         if (scrollPos >= top && scrollPos < top + height) {
           setActiveSection(id);
         }

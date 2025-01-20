@@ -23,7 +23,7 @@ export const Projects = () => {
         "Led a cross-functional team to develop 'Echo Threads', a secure messaging web app, enhancing user trust by 25% through advanced privacy features, including AES-GCM 256-bit encryption and Diffie-Hellman key exchange.",
         'Spearheaded project planning, code reviews, and deployment ensuring timely delivery and exceeding user security expectations.',
       ],
-      link: 'https://github.com/suneelmeesalameher/EchoThreadServices',
+      link: 'https://t5-fe-digitalsignatures.d2wk9uf5opouae.amplifyapp.com/',
     },
     {
       title: 'Auditing for Bias - Machine Learning',

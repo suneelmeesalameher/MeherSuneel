@@ -10,7 +10,7 @@ export const About_me = () => {
       </div>
       <div className="summary">
         Masters in Computer Science from George Mason University.
-        <br /> Ex-Software Developer
+        <br />Software Developer
       </div>
     </div>
   );
