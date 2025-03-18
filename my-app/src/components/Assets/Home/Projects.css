@@ -69,3 +69,12 @@
 html {
     scroll-behavior: smooth;
 }
+@media (max-width: 768px) {
+    .projects-title {
+        font-size: 35px !important;
+        /* Font size for mobile */
+    }
+    .project-title {
+        font-size: 20px;
+    }
+}

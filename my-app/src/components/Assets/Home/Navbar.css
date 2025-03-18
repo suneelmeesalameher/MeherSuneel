@@ -1,46 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&display=swap');
 
 .Navbar {
     top: 0;
     left: 0;
     position: fixed;
-    width: calc(100% - 140px);
+    width: 100%;
     background-color: black;
-    padding: 25px 70px;
+    padding: 20px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 10;
     border-bottom: 2px solid #000000;
 }
 
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 15;
+}
+
 .Navbar-links {
     display: flex;
     gap: 20px;
-    width: 100%;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Navbar-link styling */
 .Navbar-link {
     color: #ffffff;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
     padding: 5px 10px;
-    transition: background-color 0.3s;
+    transition: color 0.3s ease, transform 0.3s ease;
     font-family: 'Exo 2', Arial, sans-serif;
 }
 
-.Navbar-link:hover {
-    color: #cca9f2;
-}
+.Navbar-link:hover,
 .Navbar-link.active {
     color: #cca9f2;
 }
-/* Push the 'Contact Me' link to the right */
-.Navbar .Navbar-links .contact {
-    margin-left: auto;
-    /* This pushes the 'contact' link to the right */
-}
-html {
-    scroll-behavior: smooth;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        /* Display the icon on mobile */
+    }
+
+    .Navbar-links {
+        position: absolute;
+        top: 60px;
+        /* Adjust the distance from top */
+        left: 0;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        /* White background for mobile */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        transform: translateY(-100%);
+        /* Hidden initially */
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 10;
+        /* Ensure navbar links appear above other content */
+    }
+
+    .Navbar-links.open {
+        transform: translateY(0);
+        /* Slide in */
+        opacity: 1;
+    }
+
+    .Navbar-link {
+        padding: 10px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        /* Ensure text is visible */
+        background-color: rgb(0, 0, 0);
+        /* Make the text stand out on mobile */
+        border-radius: 5px;
+        /* Optional: Add border-radius to make it look better */
+    }
+
+    .Navbar-link.active {
+        color: #cca9f2;
+        /* Highlight active link */
+    }
 }

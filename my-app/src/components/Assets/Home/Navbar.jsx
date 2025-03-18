@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('about');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const navbarHeight = document.querySelector('.Navbar').offsetHeight;
@@ -30,34 +32,45 @@ const Navbar = () => {
 
   return (
     <nav className="Navbar">
-      <div className="Navbar-links">
+      {/* Hamburger icon */}
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FiX size={30} color="#fff" /> : <FiMenu size={30} color="#fff" />}
+      </div>
+
+      {/* Navbar links */}
+      <div className={`Navbar-links ${menuOpen ? 'open' : ''}`}>
         <a
           href="#about"
           className={`Navbar-link ${activeSection === 'about' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
         >
           HOME
         </a>
         <a
           href="#work"
           className={`Navbar-link ${activeSection === 'work' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
         >
           WORK EXPERIENCE
         </a>
         <a
           href="#skills"
           className={`Navbar-link ${activeSection === 'skills' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
         >
           TECHNICAL EXPERIENCE
         </a>
         <a
           href="#projects"
           className={`Navbar-link ${activeSection === 'projects' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
         >
           PROJECTS
         </a>
         <a
           href="#contact"
-          className={`Navbar-link contact ${activeSection === 'contact' ? 'active' : ''}`}
+          className={`Navbar-link ${activeSection === 'contact' ? 'active' : ''}`}
+          onClick={() => setMenuOpen(false)}
         >
           CONTACT ME
         </a>

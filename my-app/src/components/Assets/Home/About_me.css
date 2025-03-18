@@ -1,24 +1,23 @@
+/* General styles for all devices */
 div {
     text-align: left;
     /* Ensure no parent container centers content */
 }
-.about{
+
+.about {
     padding: 150px 250px;
 }
+
 .Name {
     padding: 250px 50px 0px 0%;
-    /* Adjust left padding for a percentage-based shift */
     font-size: 70px;
     color: #000000;
     font-weight: bold;
     font-family: 'Exo 2', sans-serif;
     text-align: left;
-    /* Ensure text is left-aligned */
 }
 
 .Name .hi {
-    padding: 0px 0px 0px  0px 0%;
-    /* Align .hi consistently with the parent */
     color: #555555;
     font-size: 20px;
     font-family: 'Exo 2', sans-serif;
@@ -27,14 +26,62 @@ div {
 
 .summary {
     padding: 10px 0px 30px 0%;
-    /* Add percentage-based left padding */
     color: #272727;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Exo 2', sans-serif;
     text-align: left;
-    /* Ensure alignment is consistent */
 }
+
 html {
     scroll-behavior: smooth;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .about {
+        padding: 50px 20px;
+        /* Reduced padding for better space utilization */
+    }
+
+    .Name {
+        padding: 100px 20px;
+        /* Reduced padding for better alignment on mobile */
+        font-size: 50px;
+        /* Smaller font size for mobile */
+    }
+
+    .Name .hi {
+        font-size: 18px;
+        /* Slightly smaller size for the subheading */
+    }
+
+    .summary {
+        padding: 10px 0 20px;
+        /* Adjusted padding for summary */
+        font-size: 18px;
+        /* Smaller font size for mobile */
+    }
+}
+
+/* Additional styles to handle tablet devices */
+@media (max-width: 1024px) {
+    .about {
+        padding: 100px 50px;
+        /* Adjust padding for medium screens */
+    }
+
+    .Name {
+        padding: 150px 30px;
+        /* Reduced padding for medium screens */
+        font-size: 60px;
+        /* Adjust font size */
+    }
+
+    .summary {
+        padding: 10px 0 25px;
+        /* Slightly increased bottom padding */
+        font-size: 19px;
+        /* Slightly smaller font size */
+    }
 }

@@ -1,3 +1,12 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    box-sizing: border-box;
+    /* Include padding in total width/height */
+}
 .work-section {
     text-align: center;
     padding: 50px 0;
@@ -23,6 +32,7 @@
 }
 
 .sidebar-button {
+    color: #000000;
     width: 100%;
     padding: 15px;
     margin-bottom: 10px;
@@ -75,4 +85,61 @@
 }
 html {
     scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+    .work-title {
+        font-size: 35px;
+    }
+    .content h3{
+        font-size: 24px;
+    }
+    .content h4{
+        font-size: 20px;
+    }
+    .work-section {
+        padding: 40px 15px;
+        /* Add consistent padding */
+    }
+
+    .work-layout {
+        flex-direction: column;
+        /* Stack sidebar and content */
+        align-items: center;
+        max-width: 100%;
+        /* Prevent overflow */
+        padding: 0 10px;
+        /* Ensure it doesn’t stretch too much */
+        overflow: hidden;
+    }
+
+    .sidebar {
+        width: 100%;
+        /* Ensure buttons don’t go out */
+        padding: 5px 5px;
+        /* Reduce padding */
+    }
+
+    .sidebar-button {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        /* Adjust padding for better tap size */
+    }
+    .sidebar-button.active {
+        color: #000000;
+        font-weight: bold;
+    }
+    
+    .sidebar-button:hover {
+        color: #000000;
+    }
+    .content {
+        width: 100%;
+        padding: 15px;
+        /* Reduce padding so it doesn’t overflow */
+        word-wrap: break-word;
+        /* Prevent long words from overflowing */
+        box-sizing: border-box;
+        /* Ensures padding doesn’t add to width */
+    }
 }

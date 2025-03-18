@@ -39,3 +39,22 @@
 html {
     scroll-behavior: smooth;
 }
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .contact-summary {
+        font-size: 18px;
+        margin-bottom: 50px;
+        padding: 20px 20px;
+        /* Adjusted padding for smaller screens */
+    }
+
+    .contact-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}

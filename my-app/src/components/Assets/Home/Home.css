@@ -1,32 +1,7 @@
-
-.About_me,
-.Work_experience,
-.Technical_skills,
-.Education,
-.Projects,
-.Contact_me {
-    color: #333333;
-    margin: 20px 0;
-    /* Adds some spacing between sections */
-}
-
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-section {
-   
-    padding: 0;
-}
-section {
-    margin: 0;
-    padding: 50px 0;
-    width: 100%;
-}
-
-
+/* The background for larger screens */
 .App-header {
     background:
+        radial-gradient(circle at 0% 0%, #f9c4d1 5%, transparent 30%),
         radial-gradient(circle at 10% 50%, #eae0f4 5%, transparent 30%),
         radial-gradient(circle at 20% 10%, #f9e3b3 5%, transparent 30%),
         radial-gradient(circle at 30% 80%, #f9c4d1 5%, transparent 30%),
@@ -39,7 +14,6 @@ section {
         radial-gradient(circle at 15% 10%, #eae0f4 5%, transparent 30%),
         radial-gradient(circle at 35% 30%, #f9e3b3 5%, transparent 30%),
         radial-gradient(circle at 2% 90%, #f9c4d1 5%, transparent 30%),
-        /*linear-gradient(135deg, #fde9f2, #f1e4ff);*/
         linear-gradient(135deg, #f13b8d, #f1e4ff);
     background-size: 300% 300%;
     animation: purpleBallAnimation 3s ease-in-out infinite, pastelGradientAnimation 20s ease infinite;
@@ -50,27 +24,50 @@ section {
     justify-content: flex-start;
     font-size: calc(10px + 2vmin);
     color: white;
-    /* Prevents content from being hidden under the navbar */
     padding-bottom: 20px;
-    /* Optional: adds some bottom padding for spacing */
-}
-.App-header {
-    min-height: 100%;
-}
-.App-link {
-    color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
+/* Adjust for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .App-header {
+        background:
+            radial-gradient(circle at 0% 0%, #f9c4d1 5%, transparent 10%),
+                radial-gradient(circle at 10% 50%, #eae0f4 5%, transparent 13%),
+                radial-gradient(circle at 20% 10%, #f9e3b3 5%, transparent 11%),
+                radial-gradient(circle at 30% 48%, #f9c4d1 5%, transparent 14%),
+                radial-gradient(circle at 40% 20%, #eae0f4 5%, transparent 15%),
+                radial-gradient(circle at 50% 60%, #f9e3b3 5%, transparent 16%),
+                radial-gradient(circle at 34% 42%, #f9c4d1 5%, transparent 11%),
+                radial-gradient(circle at 70% 10%, #eae0f4 5%, transparent 12%),
+                radial-gradient(circle at 80% 30%, #f9e3b3 5%, transparent 15%),
+                radial-gradient(circle at 48% 69%, #f9c4d1 5%, transparent 18%),
+                radial-gradient(circle at 15% 10%, #eae0f4 5%, transparent 12%),
+                radial-gradient(circle at 35% 30%, #f9e3b3 5%, transparent 18%),
+                radial-gradient(circle at 2% 90%, #f9c4d1 5%, transparent 19%),
+                linear-gradient(135deg, #f13b8d, #f1e4ff),
+                radial-gradient(circle at 50% 10%, #f9c4d1 5%, transparent 10%),
+                radial-gradient(circle at 60% 80%, #eae0f4 5%, transparent 10%),
+                radial-gradient(circle at 75% 40%, #f9e3b3 5%, transparent 10%),
+                radial-gradient(circle at 25% 50%, #f9c4d1 5%, transparent 10%),
+                radial-gradient(circle at 90% 20%, #eae0f4 5%, transparent 10%),
+                radial-gradient(circle at 55% 70%, #f9e3b3 5%, transparent 10%),
+                radial-gradient(circle at 15% 90%, #f9c4d1 5%, transparent 10%),
+                radial-gradient(circle at 85% 30%, #eae0f4 5%, transparent 10%),
+                radial-gradient(circle at 40% 60%, #f9e3b3 5%, transparent 10%),
+                radial-gradient(circle at 10% 80%, #f9c4d1 5%, transparent 10%),
+                radial-gradient(circle at 70% 50%, #eae0f4 5%, transparent 10%),
+                radial-gradient(circle at 80% 90%, #f9e3b3 5%, transparent 10%);
+        background-size: 100% 100%;
+        /* Increased size to allow for more visible movement */
+        animation: purpleBallAnimationMobile 2s ease-in-out infinite, pastelGradientAnimation 15s ease infinite;
+        font-size: 14px;
+        /* Adjusted for mobile */
+        padding-bottom: 40px;
+        /* Adjusted padding for mobile */
     }
-
-    to {
-        transform: rotate(360deg);
-    }
 }
 
+/* Animation keyframes */
 @keyframes pastelGradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -85,29 +82,86 @@ section {
     }
 }
 
-@keyframes purpleBallAnimation {
+/* Keyframes for more movement on mobile */
+@keyframes purpleBallAnimationMobile {
     0% {
-        background-position: 30% 30%, 0% 50%;
+        background-position: 10% 10%, 20% 20%;
+    }
+
+    5% {
+        background-position: 12% 12%, 25% 18%;
+    }
+
+    10% {
+        background-position: 15% 15%, 30% 20%;
+    }
+
+    15% {
+        background-position: 20% 19%, 10% 30%;
+    }
+
+    20% {
+        background-position: 25% 25%, 15% 35%;
     }
 
     25% {
-        background-position: 70% 40%, 100% 50%;
+        background-position: 30% 30%, 50% 40%;
+    }
+
+    30% {
+        background-position: 40% 35%, 55% 50%;
+    }
+
+    40% {
+        background-position: 50% 45%, 65% 55%;
     }
 
     50% {
-        background-position: 50% 70%, 50% 50%;
+        background-position: 60% 60%, 70% 60%;
+    }
+
+    60% {
+        background-position: 65% 55%, 75% 50%;
+    }
+
+    70% {
+        background-position: 70% 45%, 60% 40%;
     }
 
     75% {
-        background-position: 30% 60%, 0% 50%;
+        background-position: 80% 50%, 40% 50%;
+    }
+
+    80% {
+        background-position: 72% 60%, 30% 60%;
+    }
+
+    90% {
+        background-position: 43% 38%, 20% 70%;
     }
 
     100% {
-        background-position: 30% 30%, 100% 50%;
+        background-position: 17% 20%, 27% 70%;
     }
 }
 
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+/* Style for each section */
+.About_me,
+.Work_experience,
+.Technical_skills,
+.Education,
+.Projects,
+.Contact_me {
+    color: #333333;
+    margin: 20px 0;
+}
+
+section {
+    margin: 0;
+    width: 100%;
 }

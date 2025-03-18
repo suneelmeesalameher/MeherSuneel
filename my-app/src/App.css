@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .App-logo {
   height: 40vmin;
@@ -34,5 +39,12 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive App Header */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: 18px; /* Reduce font size for smaller screens */
   }
 }
