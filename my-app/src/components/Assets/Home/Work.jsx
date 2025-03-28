@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './Work.css';
 
 export const Work = () => {
-  const [activeSection, setActiveSection] = useState('tcs-systems-engineer');
+  const [activeSection, setActiveSection] = useState('tcs-software-engineer');
 
   const experiences = {
-    'tcs-systems-engineer': {
-      title: 'Tata Consultancy Services | Systems Engineer',
-      period: 'Nov 2021 - Dec 2022',
+    'tcs-software-engineer': {
+      title: 'Tata Consultancy Services | Software Engineer',
+      period: 'Aug 2021 - Dec 2022',
       bullets: [
         'Optimized identity management by programming RESTful APIs in Node.js and TypeScript with Keycloak, improving data integration efficiency and reducing processing time by 25%, saving 15 hours weekly.',
         'Spearheaded a 20% security enhancement by developing custom Node.js packages and implementing tenant-specific token generation for authentication.',
@@ -17,9 +17,9 @@ export const Work = () => {
         'Promoted from Assistant Systems Engineer to Systems Engineer, reflecting my contributions and ability to take on more complex responsibilities.',
       ],
     },
-    'tcs-assistant-engineer': {
-      title: 'Tata Consultancy Services | Assistant Systems Engineer',
-      period: 'Nov 2020 - Oct 2021',
+    'tcs-associate-software-engineer': {
+      title: 'Tata Consultancy Services | Associate Software Engineer',
+      period: 'Nov 2019 - Jul 2021',
       bullets: [
         'Implemented DevOps practices with CI/CD pipelines and load balancing on Google Cloud APIGEE and AWS, improving deployment efficiency by 30% and enhancing microservices scalability.',
         'Engineered a Java Spring Boot-based component for seamless data ingestion from Mosquitto MQTT and storage in IBM\'s Tape Files, optimizing data retrieval speed by 30% and reducing storage costs by 20%.',
@@ -42,22 +42,22 @@ export const Work = () => {
         {/* Left Sidebar: Buttons */}
         <div className="sidebar">
           <button
-            className={`sidebar-button ${activeSection === 'tcs-systems-engineer' ? 'active' : ''}`}
-            onClick={() => setActiveSection('tcs-systems-engineer')}
+            className={`sidebar-button ${activeSection === 'tcs-software-engineer' ? 'active' : ''}`}
+            onClick={() => setActiveSection('tcs-software-engineer')}
           >
-            TCS | Systems Engineer
+            TCS | Software Engineer
           </button>
           <button
-            className={`sidebar-button ${activeSection === 'tcs-assistant-engineer' ? 'active' : ''}`}
-            onClick={() => setActiveSection('tcs-assistant-engineer')}
+            className={`sidebar-button ${activeSection === 'tcs-associate-software-engineer' ? 'active' : ''}`}
+            onClick={() => setActiveSection('tcs-associate-software-engineer')}
           >
-            TCS | Assistant Systems Engineer
+            TCS | Associate Software Engineer
           </button>
           <button
             className={`sidebar-button ${activeSection === 'grepthor' ? 'active' : ''}`}
             onClick={() => setActiveSection('grepthor')}
           >
-            Grepthor | ML Intern
+            Grepthor | Machine Learning Intern
           </button>
         </div>
 
