@@ -32,7 +32,7 @@ export const Work = () => {
     },
     'tcs-associate-software-engineer': {
       title: 'Tata Consultancy Services | Associate Software Engineer',
-      period: 'Nov 2020 - Jul 2020',
+      period: 'Nov 2020 - Jul 2021',
       bullets: [
         'Implemented DevOps practices with CI/CD pipelines and load balancing on Google Cloud APIGEE and AWS, improving deployment efficiency by 30% and enhancing microservices scalability.',
         'Engineered a Java Spring Boot-based component for seamless data ingestion from Mosquitto MQTT and storage in IBM\'s Tape Files, optimizing data retrieval speed by 30% and reducing storage costs by 20%.',
